@@ -1,0 +1,14 @@
+import turtle
+
+t = turtle.Turtle()
+s = turtle.Screen()
+s.bgcolor("white") # Changed background to white
+t.pencolor=("blue")   # Changed pencolor blue
+t.speed(0)
+
+for i in range(120):    # Reduced the range for a different effect 
+    t.forward(i * 3)  # increased stepsize for a spriral effect
+    t.right(60)   # Changed turning angle to create a hexagon like spiral
+
+t.hideturtle()
+turtle.done()
